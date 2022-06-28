@@ -11,3 +11,6 @@ Install
          cd helloworld
          code .
          ng serve
+
+Component
+         ng g c name_component
