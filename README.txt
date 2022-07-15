@@ -25,3 +25,10 @@ Primeng
          "node_modules/primeicons/primeicons.css",
          "node_modules/primeng/resources/themes/lara-light-blue/theme.css",
          "node_modules/primeng/resources/primeng.min.css" (angular.json)
+
+Firebase
+         npm install firebase --save
+         npm install --save  @angular/fire
+
+Service
+         ng g s auth
