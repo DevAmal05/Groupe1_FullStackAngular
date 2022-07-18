@@ -25,7 +25,8 @@
             "styles": [
               "src/styles.css",
               "src/assets/template/css/sb-admin-2.css",
-              "src/assets/template/vendor/fontawesome-free/css/all.css"
+              "src/assets/template/vendor/fontawesome-free/css/all.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": [
               "src/assets/template/js/sb-admin-2.js",

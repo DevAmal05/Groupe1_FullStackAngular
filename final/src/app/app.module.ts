@@ -11,13 +11,15 @@ import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { environment } from 'src/environments/environment';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PeoplelistComponent } from './peoplelist/peoplelist.component';
+import { ResetpasswordComponent } from './resetpassword/resetpassword.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     RegisterComponent,
-    PeoplelistComponent
+    PeoplelistComponent,
+    ResetpasswordComponent
   ],
   imports: [
     BrowserModule,

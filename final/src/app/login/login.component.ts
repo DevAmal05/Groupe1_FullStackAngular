@@ -42,8 +42,9 @@ get password(){
 }
 
 
+
 login(){
-  const email=this.loginForm.get('email').value;
+  const email=this.loginForm.get('email').value
   const password=this.loginForm.get('password').value
   this.authservice.signInUser(email,password).then(
     ()=>{
@@ -55,6 +56,7 @@ login(){
   )
 
 }
+
  
 
 }

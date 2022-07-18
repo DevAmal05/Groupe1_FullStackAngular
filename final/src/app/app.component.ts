@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import firebase from 'firebase/compat/app';
+import { AuthService } from './auth.service';
 
 @Component({
   selector: 'app-root',
@@ -7,8 +8,9 @@ import firebase from 'firebase/compat/app';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  isAuth:boolean
   title = 'final';
-  constructor(){
+  constructor(private authservice:AuthService){
     var firebaseConfig = {
       apiKey: "AIzaSyDx3idMHuETFY0l1euNs3fjYSouQK0rK04",
       authDomain: "testangular1-44189.firebaseapp.com",
@@ -22,5 +24,24 @@ export class AppComponent {
     
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
+  }
+  ngOnInit():void{
+    firebase.auth().onAuthStateChanged(
+      (user) =>{
+        if(user) {
+          this.isAuth=true
+
+        } else {
+          this.isAuth=false
+        }
+      }
+    )
+  }
+
+
+
+  signOut(){
+    this.authservice.signOutUser()
+
   }
 }
