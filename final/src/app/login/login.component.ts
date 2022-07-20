@@ -49,6 +49,7 @@ login(){
   this.authservice.signInUser(email,password).then(
     ()=>{
       this.router.navigate(['/peoplelist'])
+      
     },
     (error)=>{
       this.errorMessage=error
