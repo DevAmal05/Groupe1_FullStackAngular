@@ -32,3 +32,10 @@ Firebase
 
 Service
          ng g s auth
+           
+Model
+           ng g class nom_model
+
+
+Angular Material
+           ng add @angular/material 
