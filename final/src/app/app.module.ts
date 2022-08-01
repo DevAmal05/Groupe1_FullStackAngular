@@ -24,6 +24,7 @@ import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AdduserComponent } from './adduser/adduser.component';
 import { ConfirmationDialogComponent } from './confirmation-dialog/confirmation-dialog.component';
+import { UpdateuserComponent } from './updateuser/updateuser.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { ConfirmationDialogComponent } from './confirmation-dialog/confirmation-
     PeoplelistComponent,
     ResetpasswordComponent,
     AdduserComponent,
-    ConfirmationDialogComponent
+    ConfirmationDialogComponent,
+    UpdateuserComponent
   ],
   imports: [
     BrowserModule,

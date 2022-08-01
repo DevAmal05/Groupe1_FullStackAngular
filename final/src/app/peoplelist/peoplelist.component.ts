@@ -44,11 +44,11 @@ userList: AngularFireList<any>
 
         this.userList = db.list('Users');
 
-        this.userfordelete = this.firebase.list('users');
+        this.userfordelete = this.firebase.list('Users');
       this.route.params.subscribe( params => {
         this.id = params
       });
-      this.userforupdate = this.firebase.list('users');
+      this.userforupdate = this.firebase.list('Users');
       this.id1 = this.route.snapshot.paramMap.get('id');
       console.log(this.id1)
        }
@@ -90,8 +90,9 @@ userList: AngularFireList<any>
   
   edit(key: string){
     
-    this.router.navigate(['update-user/'+key])
+    this.router.navigate(['updateuser/'+key])
   
   }
+  
 
 }

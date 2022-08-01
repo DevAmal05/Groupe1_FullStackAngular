@@ -33,6 +33,6 @@ export class UserService {
   }
   
   getUserById(id:any) : Observable<any>{
-    return this.db.list('users', ref => ref.orderByKey().equalTo(id)).snapshotChanges();
+    return this.db.list('Users', ref => ref.orderByKey().equalTo(id)).snapshotChanges();
   }}
 

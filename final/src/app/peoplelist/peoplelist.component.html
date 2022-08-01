@@ -31,6 +31,7 @@
                     <td>{{ item1.Firstname }}</td>
                     <td>{{ item1.Lastname }}</td>
                     <td>{{ item1.Phone }}</td>
+                   
                   
                     
 
@@ -41,7 +42,7 @@
                         <div class="example-button-container">
                             <button style="margin-right: 12%" mat-mini-fab color="warn" >
                               <mat-icon>delete</mat-icon></button>
-                              <button mat-mini-fab color="green" >
+                              <button mat-mini-fab color="green"  (click)="edit(item1.$key)" >
                                 <mat-icon>edit</mat-icon>
                             </button>
                             <button pButton pRipple icon="pi pi-pencil" class="p-button-rounded p-button-success mr-2"></button>
