@@ -88,11 +88,13 @@ userList: AngularFireList<any>
   } 
 
   
+  
   edit(key: string){
     
     this.router.navigate(['updateuser/'+key])
   
   }
+  
   
 
 }
